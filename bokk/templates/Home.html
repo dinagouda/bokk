@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Book reviews </title>
+
+<style>
+
+.header {
+    position: fixed;
+    height: 55px;
+    background: indigo;
+    width: 100%;
+    /*margin: -1px;*/
+    margin-top: -20px;
+   /* padding: 20px;*/
+   text-decoration: none;
+    margin-left: -7px;
+
+
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.projects{
+	padding-top: 100px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+</style>
+</head>
+<body >
+<div>
+<div class="header" >
+
+
+
+    <div style="margin-left: 20px;margin-top: 15px ;font-size: 22px">
+      <a href="#Home" style="color: rgb(0,0,0); color: white  ;margin-left: 5px">Home</a>
+     <a href="#Favorite" style="color: rgb(0,0,0); color: white ;margin-left: 8px">Favorite</a>
+
+    </div>
+
+<div style="margin-left: 1380px ;margin-top: -22px;font-size: 20px">
+    <a href="{% url 'login_view' %}" style="color: rgb(0,0,0); color: white ">Login</a>
+    <a href="{% url 'signup_view'  %}"  style="color: rgb(0,0,0) ;color: white ;margin-left: 30px">Signup</a>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+<h1 style="padding-top: 100px ;color: indigo">Book Reviews</h1>
+
+<hr>
+<img style="margin-top: 40px" src='{% static "img/book.png" %}' />
+
+
+
+
+
+
+
+
+<div id="Home" class="projects" >
+    <h3 style="padding-top: 100px ;font-size: 30px ;color:indigo;">Home</h3>
+
+<hr>
+
+
+<a style="font-size: 25px ;color: indigo ;margin-left: 15px " href="{% url 'Children' %}">Children Books</a>
+<p style="margin-left: 15px">There’s nothing more magical for a child than getting lost in a good book. Choose a story from our wide selection to read together or grab a gift for the little reader in your life.</p>
+
+<a style="font-size: 25px ;color: indigo ;margin-left: 15px"href="{% url 'Political' %}">Political Books</a>
+<p style="margin-left: 15px">Some books are interested in politics and political men</p>
+
+
+<a style="font-size: 25px ;color: indigo ;margin-left: 15px" href="{% url 'Poetry' %}">Poetry Books</a>
+<p style="margin-left: 15px">Discover an extensive selection of poetry books, collections, and anthologies at Book reviews. Find classic works by famous poets, as well as new .</p>
+
+<a style="font-size: 25px;color: indigo ;margin-left: 15px" href="{% url 'ArtDesign' %}">Art&Design Books</a>
+<p style="margin-left: 15px">Some books are interested in design and art.</p>
+
+<a style="font-size: 25px ;color: indigo ;margin-left: 15px" href="{% url 'Programing' %}">Programing Books</a>
+<p style="margin-left: 15px">
+Some books are interested in programming languages.</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="Favorite" style="font-size: 20px">
+    <h3 style="padding-top: 100px ;font-size: 30px ;color:indigo;">Favorite</h3>
+
+<hr>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

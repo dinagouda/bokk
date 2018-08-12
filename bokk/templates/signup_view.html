@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+
+<style>
+        .prc {
+    {#margin-bottom: 600px;#}
+
+    font: bold;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: oblique;
+   text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+
+<form  action="" method="post" style="background: white ;width: 600px ;margin-left: 450px ;margin-top: 100px;height: 600px ;border-color: indigo ;border-style: solid">
+
+  <div style=" color: indigo ;margin-left: 10px" >
+<h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+   <hr>
+  </div>
+
+<div class="prc" style="color: indigo ;margin-left: 10px">
+   {% csrf_token %}
+{{ form.as_p }}
+</div>
+
+
+    <label class="prc" style="color: indigo" >
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px ;margin-left: 10px"> Remember me
+    </label>
+
+
+
+    <div  style="margin-top: 20px">
+
+      <button type="submit" style="color: indigo ;width: 100px ;height: 30px ;margin-left: 10px" >Sign Up</button>
+        <p style="color: indigo">{{ msg }}</p>
+
+    </div>
+
+</form>
+
+
+
+</body>
+</html>

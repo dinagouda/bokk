@@ -1,0 +1,54 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+
+    <title>Login to Book reviews</title>
+<style>
+    .prc {
+    {#margin-bottom: 600px;#}
+    margin-left: 200px;
+    font: bold;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: oblique;
+   text-decoration: none;
+}
+
+
+
+</style>
+  </head>
+
+<body>
+
+<form  action="" method="post" style="background: white ;width: 600px ;margin-left: 450px ;margin-top: 100px;height: 500px ;border-color: indigo ;border-style: solid">
+
+  <div style=" color: indigo ;margin-left: 10px" >
+<h1>Login</h1>
+
+   <hr>
+  </div>
+
+<div class="prc" style="color: indigo ;margin-left: 10px">
+   {% csrf_token %}
+    {{ formin.as_p }}
+</div>
+      <div class="prc" >
+        <label>
+
+          <input type="checkbox" value="remember-me" >
+            <label style="color: indigo ; "> Remember me</label>
+
+        </label>
+      </div>
+      <button class="prc" type="submit" style="width: 150px ;background: indigo ;color: white">Sign in</button>
+    <p style="color: indigo">{{ msg }}</p>
+      <p class="prc">&copy; 2018-2019</p>
+
+    </form>
+
+
+  </body>
+</html>
